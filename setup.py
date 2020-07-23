@@ -6,7 +6,6 @@ from setuptools import setup
 HERE = os.path.abspath(os.path.dirname(__file__))
 
 
-
 #####
 # Helper functions
 #####
