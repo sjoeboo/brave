@@ -10,7 +10,7 @@ def inspect_tag(config, tag, limit, values, j):
     query_data = json.dumps({"key": tag, "limit": limit})
     query_result = heroic.heroic_query(query_path, query_type, query_data, config)
     if query_result["errors"] == []:
-        if query_result["limited"] != False:
+        if query_result["limited"] is not False:
             click.echo("Results limited, increase `limit` to see full set")
         if not values and not j:
             click.echo("Tag: {}".format(tag))
@@ -60,7 +60,7 @@ def high_cardinality(config, limit, threshold):
         query_result = heroic.heroic_query(query_path, query_type, query_data, config)
         if query_result["errors"] != []:
             click.echo(query_result["errors"])
-        if query_result["limited"] != False:
+        if query_result["limited"] is not False:
             click.echo("Results limited, increase `limit` to see full set")
         for s in query_result["suggestions"]:
             if s["count"] >= threshold:
