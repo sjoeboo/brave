@@ -8,4 +8,4 @@ install:
   - pip install -r test-requirements.txt
   - pip install .
 # command to run tests
-script: pytest --flake8 && pytest
+script: pytest --flake8
