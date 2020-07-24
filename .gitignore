@@ -1,5 +1,7 @@
 *.pyc
 *.egg-info
+*eggs
+*.pytest_cache
 .tox 
 .python-version
 .venv
