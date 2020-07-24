@@ -1,15 +1,15 @@
-# Victor - A CLI for Heroic
+# Brave - A CLI for Heroic
 
-##### Why 'Victor`
+##### Why 'Brave`
 because it was one of the options for synoyms of `heroic` or `hero`.
 
 
 # Config 
 
-victor will search ~/.victor.yaml or `-c/--config` for a config. The only **required** entry is `victor.heroic.url` 
+brave will search ~/.brave.yaml or `-c/--config` for a config. The only **required** entry is `brave.heroic.url` 
 
 ```yaml
-victor:
+brave:
   heroic:
     url: http://heroic.local #required
     limits: 5000
@@ -21,18 +21,18 @@ victor:
 `--help` is youi friend
 Uses:
 
-`victor key-inspect` : Find all `$keys`. Queries the `/metadata/key-suggest` endpoint. 
+`brave key-inspect` : Find all `$keys`. Queries the `/metadata/key-suggest` endpoint. 
 
-`victor tag-inspect`: Find all values for a specific tag. Queries the `/metadata/tag-value-suggest` endpoint
+`brave tag-inspect`: Find all values for a specific tag. Queries the `/metadata/tag-value-suggest` endpoint
 
-`victor high-cardinality`: Find tags with high cardinality(use `--threshold`). First finds all keys using `key-inspect`, which is used to make smaller queries to `/metadata/tagkey-count` endpoint.
+`brave high-cardinality`: Find tags with high cardinality(use `--threshold`). First finds all keys using `key-inspect`, which is used to make smaller queries to `/metadata/tagkey-count` endpoint.
 
 
 
 Todo:
 
-`victor tag-discovery`: Find all applicable tags/values for a given query 
+`brave tag-discovery`: Find all applicable tags/values for a given query 
 
-`victor query`: Run a query, print results (datapoints included)
+`brave query`: Run a query, print results (datapoints included)
 
 

@@ -31,14 +31,14 @@ def read_requirements(filename):
 
 
 setup(
-    name="victor",
-    url="https://github.com/sjoeboo/victor",
+    name="brave",
+    url="https://github.com/sjoeboo/brave",
     author="sjoeboo",
     author_email="sjoeboo@sjoeboo.com",
     maintainer="sjoeboo",
     maintainer_email="sjoeboo@sjoeboo.com",
     version="0.0.1",
     install_requires=read_requirements("requirements.txt"),
-    packages=["victor"],
-    entry_points={"console_scripts": ["victor=victor.cli:cli"]},
+    packages=["brave"],
+    entry_points={"console_scripts": ["brave=brave.cli:cli"]},
 )
