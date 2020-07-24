@@ -44,7 +44,6 @@ setup(
     description="A Cli for the Heroic TSDB",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    #version="0.0.1",
     install_requires=read_requirements("requirements.txt"),
     packages=["heroicli"],
     python_requires='>=3.6',
