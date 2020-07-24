@@ -30,15 +30,25 @@ def read_requirements(filename):
     return [r for r in parsed if len(r) > 0]
 
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
+
 setup(
-    name="brave",
-    url="https://github.com/sjoeboo/brave",
+    name="heroicli",
+    url="https://github.com/sjoeboo/heroicli",
     author="sjoeboo",
     author_email="sjoeboo@sjoeboo.com",
     maintainer="sjoeboo",
     maintainer_email="sjoeboo@sjoeboo.com",
-    version="0.0.1",
+    description="A Cli for the Heroic TSDB",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    #version="0.0.1",
     install_requires=read_requirements("requirements.txt"),
-    packages=["brave"],
-    entry_points={"console_scripts": ["brave=brave.cli:cli"]},
+    packages=["heroicli"],
+    python_requires='>=3.6',
+    entry_points={"console_scripts": ["heroicli=heroicli.cli:cli"]},
+    use_scm_version=True,
+    setup_requires=['setuptools_scm'],
 )

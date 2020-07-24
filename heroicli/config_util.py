@@ -7,4 +7,4 @@ def load_config(config):
 
 
 def get_heroic_url(config):
-    return load_config(config)["brave"]["heroic"]["url"]
+    return load_config(config)["heroicli"]["heroic"]["url"]

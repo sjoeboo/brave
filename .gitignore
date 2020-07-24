@@ -4,3 +4,5 @@
 .python-version
 .venv
 .vscode
+dist
+build

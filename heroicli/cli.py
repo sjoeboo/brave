@@ -14,8 +14,8 @@ def cli():
 @click.option(
     "-c",
     "--config",
-    default="{}/.brave.yaml".format(home),
-    help="Location of brave.yaml config",
+    default="{}/.heroicli.yaml".format(home),
+    help="Location of heroicli.yaml config",
 )
 @click.option("-t", "--tag", required=True, help="Tag to search")
 @click.option("-l", "--limit", default=100000, help="Limit sugestions")
@@ -30,8 +30,8 @@ def tag_inspection(config, tag, limit, values, json):
 @click.option(
     "-c",
     "--config",
-    default="{}/.brave.yaml".format(home),
-    help="Location of brave.yaml config",
+    default="{}/.heroicli.yaml".format(home),
+    help="Location of heroicli.yaml config",
 )
 @click.option("-l", "--limit", default=5000, help="Limit sugestions")
 @click.option("-v", "--values", is_flag=True, help="Print values")
@@ -44,8 +44,8 @@ def key_inspection(config, limit, values, json):
 @click.option(
     "-c",
     "--config",
-    default="{}/.brave.yaml".format(home),
-    help="Location of brave.yaml config",
+    default="{}/.heroicli.yaml".format(home),
+    help="Location of heroicli.yaml config",
 )
 @click.option("-l", "--limit", default=5000, help="Limit sugestions")
 @click.option(
